@@ -77,7 +77,6 @@ public class Sw {
 				a2.setCompany(c);
 				bw.write(c);
 				list.add(a2);
-				// }
 				bw.newLine();
 				bw.close();
 				System.out.println("[등록되었습니다.]");
@@ -96,7 +95,6 @@ public class Sw {
 					bw1.newLine();
 				}
 
-				bw1.newLine();
 				bw1.close();
 
 				System.out.println("[삭제되었습니다.]");
@@ -110,7 +108,7 @@ public class Sw {
 				for (int i = 0; i < list.size(); i++) {
 
 					if (list.get(i).getName().contains(ch)) {
-						System.out.println(list.get(i).getName());
+						System.out.println(list.get(i).getName()+" "+list.get(i).getPh()+" "+list.get(i).getCompany());
 					}
 				}
 				break;
